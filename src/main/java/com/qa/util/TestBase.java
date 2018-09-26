@@ -31,10 +31,12 @@ public class TestBase {
 	}
 	
 	
-	public static void initialization(){
+	public static void initialization()
+	{
 		String browserName = prop.getProperty("browser");
 		
-		if(browserName.equals("chrome")){
+		if(browserName.equals("chrome"))
+		{
 			System.setProperty("webdriver.chrome.driver", "D:\\Projects\\chromedriver_win32 (1)\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
